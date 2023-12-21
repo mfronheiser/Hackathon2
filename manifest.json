@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "REPLACE",
+  "version": "1.0",
+  "description": "REPLACE",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./main.js"],
+      "css": ["index.css"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs"]
+}
