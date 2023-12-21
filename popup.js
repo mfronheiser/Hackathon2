@@ -1,9 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const dialogBox = document.getElementById("dialog-box");
+document.addEventListener('DOMContentLoaded', () => {
+  const dialogBox = document.getElementById('dialog-box');
   const query = { active: true, currentWindow: true };
 
   chrome.tabs.query(query, (tabs) => {
-    dialogBox.innerHTML = "Ned a little holiday cheer?";
+    dialogBox.innerHTML = 'Ned a little holiday cheer?';
   });
 
   //   const myButton = document.getElementById('help-button');
@@ -12,17 +12,17 @@ document.addEventListener("DOMContentLoaded", () => {
   //       '_blank';
   //   });
 
-  const yesButton = document.getElementById("yes-button");
-  yesButton.addEventListener("click", function () {
+  const yesButton = document.getElementById('yes-button');
+  yesButton.addEventListener('click', function () {
     chrome.tabs.create({
-      url: "https://youtu.be/yXQViqx6GMY?si=ZpGcdEcnl-6iafZ7",
+      url: 'https://youtu.be/yXQViqx6GMY?si=ZpGcdEcnl-6iafZ7',
     });
   });
 
-  const noButton = document.getElementById("no-button");
-  noButton.addEventListener("click", function () {
-    chrome.tabs.create({
-      url: "https://www.codesmith.io",
-    });
-  });
+  //   const noButton = document.getElementById("no-button");
+  //   noButton.addEventListener("click", function () {
+  //     chrome.tabs.create({
+  //       url: "https://www.codesmith.io",
+  //     });
+  //   });
 });
